@@ -1,0 +1,651 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #F4F4F4;
+    font-family: 'Poppins';
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 60px;
+}
+
+header p {
+    position: absolute;
+    right: 98px;
+    top: 10px;
+}
+
+.tell {
+    font-size: 12px;
+    color: #818181;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+}
+
+
+.dropdown {
+    width: 200px;
+    height: 30px;
+    background-color: #F9F9F9;
+    border: 1px solid rgb(189, 189, 189);
+    padding-left: 20px;
+    border-radius: 10px;
+    color: #818181;
+    
+}
+
+nav ul {
+    margin-left: 390px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 12px;
+    color: #818181;
+}
+
+nav ul li {
+    cursor: pointer;
+    border: 2px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li:hover {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.btnFavoritos {
+    margin-left: 80px;
+    width: 150px;
+    height: 30px;
+    color: orangered;
+    font-weight: 600;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid orangered;
+    cursor: pointer;
+}
+
+.btnFavoritos:hover {
+    background-color: orangered;
+    color: #ffffff;
+    transition: .5s;
+    box-shadow: 0px 0px 5px 0px orangered;
+}
+
+.searchBar {
+    width: 100%;
+    height: 60px;
+}
+
+.searchBar input {
+    margin-left: 60px;
+    width: 72.4%;
+    height: 30px;
+    background-color: #ffffff;
+    padding-left: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(255, 68, 0, 0);
+}
+
+.searchBar input:hover {
+    border: 1px solid orangered;
+    transition: .3s;
+}
+
+.searchBar button {
+    margin-left: 72px;
+    width: 150px;
+    height: 30px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    background-color: orangered;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sec1 {
+    margin-top: 50px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    padding: 0 60px;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h1{
+    font-weight: 600;
+    margin-top: 30px;
+
+}
+
+.content #sm1 {
+    color: orangered;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.image {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.tx {
+    font-size: 14px;
+}
+
+.image img {
+    width: 300px;
+    transform: rotate(4deg);
+}
+
+.change {
+    width: 50%;
+    height: 10%;
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 75px;
+    right: 135px;
+}
+
+.change #d1 {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change #d1 img {
+    width: 16px;
+}
+.change #meio {
+    width: 200px;
+    height: 60px;
+    background-color: #ffffff60;
+    font-size: 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.change #meio small {
+    color: orangered;
+}
+
+.change #d2 {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change #d2 img {
+    width: 28px;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, orangered, white);
+    margin: 0 auto;
+}
+
+.prods {
+    width: 100%;
+    height: 300px;
+    padding: 0 60px;
+}
+
+.prods .title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.produtos {
+    display: flex;
+    gap: 20px;
+}
+
+.produtos div {
+    background-color: #ffffff;
+    width: 280px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(226, 226, 226);
+}
+
+.produtos div img {
+    width: 70%;
+    height: 35%;
+}
+
+.produtos div #p1 {
+    font-weight: 600;
+}
+
+.produtos div #p2 {
+    font-weight: 600;
+    font-size: 14px;
+    color: orangered;
+}
+
+.produtos div #p3 {
+    font-weight: 400;
+    font-size: 13px;
+    color: #818181;
+    margin-bottom: 60px;
+}
+
+.actions {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.actions #b1 {
+    width: 75%;
+    height: 40px;
+    background-color: orangered;
+    border: none;
+    color: #fff;
+    font-weight:600;
+    border-radius: 5px;
+}
+
+.actions #b2 {
+    width: 20%;
+    height: 40px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgb(214, 214, 214);
+    border-radius: 10px;
+}
+
+.actions #b2 img {
+    width: 50%;
+    height: 60%;
+}
+
+.mais {
+    width: 140px;
+    height: 40px;
+    margin: 30px auto 0px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orangered;
+}
+
+.mais:hover {
+    background-color: orangered;
+    color: white;
+    transition: .3s;
+}
+
+.sec2 {
+    margin-top: 260px;
+    width: 100%;
+    height: 400px;
+    padding: 0 60px;
+}
+
+.secTitle {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.secP1 {
+    Width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.secImage {
+    width: 100%;
+    height: 50%;
+}
+
+.secImage img {
+    width: 340px;
+}
+
+.modify{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 120px;
+    left: 40px;
+}
+
+.modify #d1 {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modify #d1 img {
+    width: 16px;
+}
+.modify #meio {
+    width: 200px;
+    height: 60px;
+    background-color: #ffffffad;
+    font-size: 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    backdrop-filter: blur(2px);
+}
+
+.modify #meio small {
+    color: orangered;
+}
+
+.modify #d2 {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modify #d2 img {
+    width: 28px;
+}
+
+.divsContainer {
+    display: flex;
+    height: 90%;
+    width: 100%;
+}
+
+.secP2 {
+    padding-left: 10%;
+    width: 50%;
+    height: 100%;
+}
+
+.modal {
+    width: 80%;
+    height: 20%;
+    background-color: #ffffffe3;
+    margin-bottom: 20px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.modal .iconCont {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .iconCont img {
+    width: 80%;
+}
+
+.modal .textCont {
+    width: 85%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal.m2 {
+    box-shadow: 0px 0px 10px 0px rgb(189, 189, 189);
+}
+
+.modal .textCont h1 {
+    font-size: 14px;
+}
+
+.modal .textCont p {
+    font-size: 12px;
+}
+
+.sec3 {
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+}
+
+.sec3 .secTitle {
+    width: 100%;
+    text-align: center;
+}
+
+.marcasCont {
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.nav {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgb(189, 189, 189);
+}
+
+.nav.n1 {
+    margin-right: 100px;
+}
+
+.nav.n2 {
+    margin-left: 100px;
+}
+
+.nav img {
+    width: 16px;
+}
+
+.nav.n2 img {
+    width: 32px;
+}
+
+.marca {
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.marca img {
+    width: 80%;
+}
+
+footer {
+    width: 100%;
+    height: 380px;
+    padding: 0px 60px;
+
+}
+
+.div {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact h1{
+    font-size: 16px;
+}
+
+.contact {
+    width: 30%;
+    height: 100%;
+}
+
+.contact ul {
+    list-style: none;
+    padding-top: 13px;
+}
+
+.contact ul li {
+    font-size: 13px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.form input {
+    padding-left: 10px;
+    width: 90%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.form textarea {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 90%;
+    height: 100px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form button {
+    width: 90%;
+    height: 40px;
+    background-color: orangered;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.dev {
+    margin: 0 50px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #818181;
+}
+
+::-webkit-scrollbar {
+  width: .60rem;
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: orangered;
+  transition: .5s;
+}
